@@ -1,0 +1,95 @@
+
+/* Tom Ford–inspired luxe style with gradient accents */
+:root{
+	--bg-gradient: linear-gradient(135deg,#0b0b0b 0%,#0f0a07 45%,#2b1f15 100%);
+	--accent-gradient: linear-gradient(90deg,#d4af37 0%,#ffd27a 50%,#c88f21 100%);
+	--muted: rgba(255,255,255,0.65);
+	--glass: rgba(255,255,255,0.03);
+}
+
+html,body{height:100%;}
+body{
+	margin:0;
+	min-height:100%;
+	background:var(--bg-gradient);
+	color:#fff;
+	font-family: "Playfair Display", Georgia, 'Times New Roman', serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	letter-spacing:0.02em;
+}
+
+/* Container to center content with subtle glass effect */
+.tf-container{
+	max-width:1100px;
+	margin:6vh auto;
+	padding:48px;
+	background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
+	border:1px solid rgba(255,255,255,0.06);
+	box-shadow:0 10px 30px rgba(2,2,2,0.6);
+	border-radius:8px;
+}
+
+h1,h2,h3{
+	margin:0 0 12px 0;
+	color:#fff;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:0.12em;
+}
+h1{font-size:48px}
+h2{font-size:28px}
+h3{font-size:18px}
+
+p{color:var(--muted);line-height:1.6;margin:0 0 16px 0;font-size:16px}
+
+/* Thin rule with gold gradient */
+.tf-rule{
+	height:4px;
+	width:90px;
+	border-radius:2px;
+	background:var(--accent-gradient);
+	margin:18px 0 28px 0;
+	box-shadow:0 6px 20px rgba(212,175,55,0.08);
+}
+
+/* Luxury button with gradient border and glassy fill */
+.tf-btn{
+	display:inline-block;
+	padding:12px 26px;
+	border-radius:30px;
+	background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	color:#fff;
+	text-decoration:none;
+	font-weight:600;
+	letter-spacing:0.08em;
+	border:2px solid transparent;
+	position:relative;
+	cursor:pointer;
+}
+.tf-btn:before{
+	content:"";
+	position:absolute;inset:-2px;border-radius:32px;
+	background:var(--accent-gradient);
+	z-index:-1;
+	filter:blur(6px);
+	opacity:0.95;
+}
+.tf-btn:hover{transform:translateY(-3px)}
+
+/* Accent text using gradient fill */
+.tf-accent{
+	background:var(--accent-gradient);
+	-webkit-background-clip:text;
+	background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+
+/* Small utility */
+.muted{color:var(--muted);font-size:14px}
+
+/* Responsive tweaks */
+@media (max-width:700px){
+	.tf-container{padding:28px;margin:4vh 16px}
+	h1{font-size:32px}
+}
