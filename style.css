@@ -30,6 +30,20 @@ body{
 	border-radius:8px;
 }
 
+/* First and last card accents */
+.card:first-child,
+.tf-card:first-child {
+	background:linear-gradient(135deg, #7f00ff 0%, #c47cff 100%);
+	border-color:rgba(127,0,255,0.25);
+	color:#fff;
+}
+.card:last-child,
+.tf-card:last-child {
+	background:linear-gradient(135deg, #0f9d58 0%, #34a853 100%);
+	border-color:rgba(34,139,34,0.25);
+	color:#fff;
+}
+
 h1,h2,h3{
 	margin:0 0 12px 0;
 	color:#fff;
@@ -93,3 +107,4 @@ p{color:var(--muted);line-height:1.6;margin:0 0 16px 0;font-size:16px}
 	.tf-container{padding:28px;margin:4vh 16px}
 	h1{font-size:32px}
 }
+
