@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Карточки VS Code</title>
+	<style>
+		body{font-family:Segoe UI,Roboto,Arial;margin:20px;background:#f4f6f8}
+		.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1000px;margin:0 auto}
+		.card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:8px}
+		.card h3{margin:0;font-size:18px;color:#0f1724}
+		.card p{margin:0;color:#334155;font-size:14px;line-height:1.4}
+		.badge{display:inline-block;padding:4px 8px;background:#007acc;color:#fff;border-radius:6px;font-size:12px}
+	</style>
+</head>
+<body>
+	<h1 style="text-align:center">Коротко о Visual Studio Code</h1>
+	<div class="grid">
+		<article class="card">
+			<span class="badge">Обзор</span>
+			<h3>Что такое VS Code</h3>
+			<p>Лёгкий редактор кода от Microsoft с поддержкой множества языков, расширений и встроенным терминалом.</p>
+		</article>
+
+		<article class="card">
+			<span class="badge">Особенности</span>
+			<h3>Основные возможности</h3>
+			<p>Подсветка синтаксиса, автодополнение (IntelliSense), отладчик, Git-интеграция и расширения в Marketplace.</p>
+		</article>
+
+		<article class="card">
+			<span class="badge">Настройка</span>
+			<h3>Кастомизация</h3>
+			<p>Темы, сочетания клавиш, фрагменты кода и настройки в JSON позволяют адаптировать редактор под себя.</p>
+		</article>
+
+		<article class="card">
+			<span class="badge">Советы</span>
+			<h3>Полезные советы</h3>
+			<p>Используйте Ctrl+P для быстрого перехода по файлам, Ctrl+Shift+P для команд и встроенный терминал (Ctrl+`).</p>
+		</article>
+
+		<article class="card">
+			<span class="badge">Поддержка</span>
+			<h3>Плагины и сообщество</h3>
+			<p>Большой выбор расширений для языков, линтеров и инструментов — ищите в Marketplace или в репозиториях GitHub.</p>
+		</article>
+	</div>
+</body>
+</html>
